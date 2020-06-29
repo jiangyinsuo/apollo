@@ -2,6 +2,9 @@ package com.ctrip.framework.apollo.portal.entity.vo;
 
 import com.ctrip.framework.apollo.portal.environment.Env;
 
+/**
+ * @author jys
+ */
 public class NamespaceEnvRolesAssignedUsers extends NamespaceRolesAssignedUsers {
     private String env;
 

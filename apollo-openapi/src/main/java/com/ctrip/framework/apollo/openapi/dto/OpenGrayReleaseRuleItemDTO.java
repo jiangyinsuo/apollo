@@ -2,6 +2,9 @@ package com.ctrip.framework.apollo.openapi.dto;
 
 import java.util.Set;
 
+/**
+ * @author jys
+ */
 public class OpenGrayReleaseRuleItemDTO {
     private String clientAppId;
     private Set<String> clientIpList;

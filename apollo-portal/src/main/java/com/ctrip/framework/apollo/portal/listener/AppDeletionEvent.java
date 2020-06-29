@@ -4,14 +4,17 @@ import com.ctrip.framework.apollo.common.entity.App;
 import com.google.common.base.Preconditions;
 import org.springframework.context.ApplicationEvent;
 
+/**
+ * @author jys
+ */
 public class AppDeletionEvent extends ApplicationEvent {
 
-  public AppDeletionEvent(Object source) {
-    super(source);
-  }
+    public AppDeletionEvent(Object source) {
+        super(source);
+    }
 
-  public App getApp() {
-    Preconditions.checkState(source != null);
-    return (App) this.source;
-  }
+    public App getApp() {
+        Preconditions.checkState(source != null);
+        return (App) this.source;
+    }
 }

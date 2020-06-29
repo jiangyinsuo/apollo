@@ -2,7 +2,10 @@ package com.ctrip.framework.apollo.openapi.dto;
 
 import java.util.Set;
 
-public class OpenGrayReleaseRuleDTO extends BaseDTO{
+/**
+ * @author jys
+ */
+public class OpenGrayReleaseRuleDTO extends BaseDTO {
     private String appId;
 
     private String clusterName;

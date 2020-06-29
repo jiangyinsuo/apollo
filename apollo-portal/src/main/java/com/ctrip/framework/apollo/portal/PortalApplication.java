@@ -9,15 +9,18 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+/**
+ * @author jys
+ */
 @EnableAspectJAutoProxy
 @Configuration
 @EnableAutoConfiguration
 @EnableTransactionManagement
 @ComponentScan(basePackageClasses = {ApolloCommonConfig.class,
-    PortalApplication.class, PortalOpenApiConfig.class})
+        PortalApplication.class, PortalOpenApiConfig.class})
 public class PortalApplication {
 
-  public static void main(String[] args) throws Exception {
-    SpringApplication.run(PortalApplication.class, args);
-  }
+    public static void main(String[] args) throws Exception {
+        SpringApplication.run(PortalApplication.class, args);
+    }
 }

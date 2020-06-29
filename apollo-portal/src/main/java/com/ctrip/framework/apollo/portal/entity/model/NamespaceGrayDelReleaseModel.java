@@ -2,6 +2,9 @@ package com.ctrip.framework.apollo.portal.entity.model;
 
 import java.util.Set;
 
+/**
+ * @author jys
+ */
 public class NamespaceGrayDelReleaseModel extends NamespaceReleaseModel implements Verifiable {
     private Set<String> grayDelKeys;
 

@@ -12,21 +12,24 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 
+/**
+ * @author jys
+ */
 @RestController
 public class CommitController {
 
-  private final CommitService commitService;
+    private final CommitService commitService;
 
-  public CommitController(final CommitService commitService) {
-    this.commitService = commitService;
-  }
+    public CommitController(final CommitService commitService) {
+        this.commitService = commitService;
+    }
 
-  @GetMapping("/apps/{appId}/clusters/{clusterName}/namespaces/{namespaceName}/commit")
-  public List<CommitDTO> find(@PathVariable String appId, @PathVariable String clusterName,
-                              @PathVariable String namespaceName, Pageable pageable){
+    @GetMapping("/apps/{appId}/clusters/{clusterName}/namespaces/{namespaceName}/commit")
+    public List<CommitDTO> find(@PathVariable String appId, @PathVariable String clusterName,
+                                @PathVariable String namespaceName, Pageable pageable) {
 
-    List<Commit> commits = commitService.find(appId, clusterName, namespaceName, pageable);
-    return BeanUtils.batchTransform(CommitDTO.class, commits);
-  }
+        List<Commit> commits = commitService.find(appId, clusterName, namespaceName, pageable);
+        return BeanUtils.batchTransform(CommitDTO.class, commits);
+    }
 
 }

@@ -4,7 +4,10 @@ import com.ctrip.framework.apollo.core.spi.Ordered;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.core.type.AnnotationMetadata;
 
+/**
+ * @author jys
+ */
 public interface ApolloConfigRegistrarHelper extends Ordered {
 
-  void registerBeanDefinitions(AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry);
+    void registerBeanDefinitions(AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry);
 }

@@ -1,5 +1,8 @@
 package com.ctrip.framework.apollo.openapi.dto;
 
+/**
+ * @author jys
+ */
 public class OpenAppNamespaceDTO extends BaseDTO {
     private String name;
 
@@ -65,16 +68,16 @@ public class OpenAppNamespaceDTO extends BaseDTO {
     @Override
     public String toString() {
         return "OpenAppNamespaceDTO{" +
-            "name='" + name + '\'' +
-            ", appId='" + appId + '\'' +
-            ", format='" + format + '\'' +
-            ", isPublic=" + isPublic +
-            ", appendNamespacePrefix=" + appendNamespacePrefix +
-            ", comment='" + comment + '\'' +
-            ", dataChangeCreatedBy='" + dataChangeCreatedBy + '\'' +
-            ", dataChangeLastModifiedBy='" + dataChangeLastModifiedBy + '\'' +
-            ", dataChangeCreatedTime=" + dataChangeCreatedTime +
-            ", dataChangeLastModifiedTime=" + dataChangeLastModifiedTime +
-            '}';
+                "name='" + name + '\'' +
+                ", appId='" + appId + '\'' +
+                ", format='" + format + '\'' +
+                ", isPublic=" + isPublic +
+                ", appendNamespacePrefix=" + appendNamespacePrefix +
+                ", comment='" + comment + '\'' +
+                ", dataChangeCreatedBy='" + dataChangeCreatedBy + '\'' +
+                ", dataChangeLastModifiedBy='" + dataChangeLastModifiedBy + '\'' +
+                ", dataChangeCreatedTime=" + dataChangeCreatedTime +
+                ", dataChangeLastModifiedTime=" + dataChangeLastModifiedTime +
+                '}';
     }
 }

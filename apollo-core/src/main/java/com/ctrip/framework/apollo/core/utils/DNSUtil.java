@@ -5,19 +5,22 @@ import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author jys
+ */
 public class DNSUtil {
 
-  public static List<String> resolve(String domainName) throws UnknownHostException {
-    List<String> result = new ArrayList<>();
+    public static List<String> resolve(String domainName) throws UnknownHostException {
+        List<String> result = new ArrayList<>();
 
-    InetAddress[] addresses = InetAddress.getAllByName(domainName);
-    if (addresses != null) {
-      for (InetAddress addr : addresses) {
-        result.add(addr.getHostAddress());
-      }
+        InetAddress[] addresses = InetAddress.getAllByName(domainName);
+        if (addresses != null) {
+            for (InetAddress addr : addresses) {
+                result.add(addr.getHostAddress());
+            }
+        }
+
+        return result;
     }
-
-    return result;
-  }
 
 }

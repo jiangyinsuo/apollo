@@ -4,14 +4,17 @@ import com.ctrip.framework.apollo.common.entity.AppNamespace;
 import com.google.common.base.Preconditions;
 import org.springframework.context.ApplicationEvent;
 
+/**
+ * @author jys
+ */
 public class AppNamespaceDeletionEvent extends ApplicationEvent {
 
-  public AppNamespaceDeletionEvent(Object source) {
-    super(source);
-  }
+    public AppNamespaceDeletionEvent(Object source) {
+        super(source);
+    }
 
-  public AppNamespace getAppNamespace() {
-    Preconditions.checkState(source != null);
-    return (AppNamespace) this.source;
-  }
+    public AppNamespace getAppNamespace() {
+        Preconditions.checkState(source != null);
+        return (AppNamespace) this.source;
+    }
 }

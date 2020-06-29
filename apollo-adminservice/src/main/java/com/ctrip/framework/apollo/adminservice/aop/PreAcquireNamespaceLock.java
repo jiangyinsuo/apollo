@@ -7,6 +7,8 @@ import java.lang.annotation.Target;
 
 /**
  * 标识方法需要获取到namespace的lock才能执行
+ *
+ * @author jys
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
